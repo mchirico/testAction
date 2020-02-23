@@ -1,0 +1,28 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Docker action step
+      id: mmcdocker
+      uses: mchirico/sshproxy-action@v1
+      with:
+        who-to-greet: 'Mona the Octocat'
+        id_rsa: ${{ secrets.SSH_PRIVATE_KEY }}
+        user: ${{ secrets.USER }}
+        server: ${{ secrets.SERVER }}
+      env: # For ssh
+        INPUT_MILLISECONDS: 500
+
+    # Use the output from the `hello` step
+    - name: Get the output time
+      run: |
+        echo "The time was ${{ steps.mmcdocker.outputs.time }}"
+
+    - name: dockup up?
+      run: docker ps -a
