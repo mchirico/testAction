@@ -1,6 +1,4 @@
 
-
-
 [![Build Status](https://travis-ci.org/mchirico/testAction.svg?branch=master)](https://travis-ci.org/mchirico/testAction)
 [![codecov](https://codecov.io/gh/mchirico/testAction/branch/master/graph/badge.svg)](https://codecov.io/gh/mchirico/testAction)
 
