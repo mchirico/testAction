@@ -3,7 +3,6 @@
 
 [![Build Status](https://mchirico.visualstudio.com/testAction/_apis/build/status/mchirico.testAction?branchName=master)](https://mchirico.visualstudio.com/testAction/_build/latest?definitionId=9&branchName=master)
 
-
 # testAction
 
 
